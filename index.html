@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-comerce website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="header">
+    <a href="#"><div class="logo"><img src="https://i.ytimg.com/vi/6cFHhFZFAJw/maxresdefault.jpg" class = "logo" alt=""></div></a>
+
+<div>
+    <ul id="navbar">
+        <li><a class= "active"href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
+        <li><a href="cart.html"><div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div></a></li>
+    </ul>
+</div>
+</section>
+
+<section id="hero">
+  <h4>Trade-in-offer</h4>
+  <h2>Super Value Deals</h2>
+  <h1>On All Product</h1>
+  <p>Save more with copons & up to 70% OFF!</p>
+  <button>Shop Now</button>
+  
+</section>
+
+<section id="feature" class="section-p1">
+  <div class="fe-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTowbeIKzMQuRXnKzhBw4cGkv-_06dEjD_BYQ&s" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+    <div class="fe-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyhUNmO_nV5wOphJDk6AMK0oQxbus2exFR1w&s" alt="">
+      <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="data:image/png;base64,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" alt="">
+        <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+          <img src="data:image/jpeg;base64,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"alt="">
+         <h6>Promotions</h6>
+         </div>
+        
+          <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8n2idyk46xqaALLMnxAHm9EM8PUQuNwsw&s" alt="">
+            <h6>24/7 Support</h6>
+            </div>  
+     
+</section>
+<section id="product1" class="section-p1">
+    <h1>Featured Product</h1>
+    <p>Summer Collection New Mordern Design</p>
+    <div class="pro-container">
+     <div class="pro">
+       <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f2.jpg?raw=true" alt="">
+       <div class="des">
+         <span>addidas</span>
+         <h5>Cartoon Astronaut T-Shirts</h5>
+         <div class="star">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+             </div>
+             <h4>$78</h4>
+       </div>
+       <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+     </div>
+     <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f3.jpg?raw=true" alt="">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f4.jpg?raw=true" alt="">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f1.jpg?raw=true" alt="">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f5.jpg?raw=true" alt="">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f6.jpg?raw=true">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f7.jpg?raw=true">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div class="pro">
+      <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f8.jpg?raw=true" alt="">
+      <div class="des">
+        <span>addidas</span>
+        <h5>Cartoon Astronaut T-Shirts</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    </div>
+
+</section>
+
+<section id="banner" class="section-m1">
+  <h4>Repair Services</h4>
+  <h2>Up to <span>70% Off </span>- All t-Shirts & Accessories</h2>
+  <button class="normal">Explore More</button>
+</section>
+
+<section id="product1" class="section-p1">
+  <h1>Electronic Product</h1>
+  <p>Best Deal On All Electronic Product</p>
+  <div class="pro-container">
+   <div class="pro">
+     <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/a/5/0/-original-imahy3uqdmgx6qey.jpeg?q=70" alt="">
+     <div class="des">
+       <span>addidas</span>
+       <h5>Cartoon Astronaut T-Shirts</h5>
+       <div class="star">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+           </div>
+           <h4>$78</h4>
+     </div>
+     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+   </div>
+   <div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/4/h/b/-original-imagmuggnzwhwz6g.jpeg?q=70" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/v/y/o/-original-imagt3vwuweuwk9v.jpeg?q=70" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/h/u/v/nb140-jaguar-50-hours-playtime-deep-bass-fast-charging-true-original-imagt2snu8mxhbrn.jpeg?q=70" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71l0w+XiK0L.AC_UL320.jpg" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/71UnOkasgaL.AC_UL320.jpg">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/81wl5P7kuAL.AC_UL320.jpg">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/91d75JiCH9L.AC_UL320.jpg" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/81QvAGRjTAL.AC_UL320.jpg" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/81Os1SDWpcL.AC_UL320.jpg">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/613SAOPmLeL.AC_UL320.jpg">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://m.media-amazon.com/images/I/619lW2YtVhL.AC_UY218.jpg" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+<div class="pro">
+  <img src="https://m.media-amazon.com/images/I/715cY0NcX2L.AC_UY218.jpg" alt="">
+  <div class="des">
+    <span>addidas</span>
+    <h5>Cartoon Astronaut T-Shirts</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+  </div>
+  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+<div class="pro">
+  <img src="https://m.media-amazon.com/images/I/816QIh81eiL.AC_UY218.jpg">
+  <div class="des">
+    <span>addidas</span>
+    <h5>Cartoon Astronaut T-Shirts</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+  </div>
+  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+<div class="pro">
+  <img src="https://m.media-amazon.com/images/I/71aFZ3znDJL.AC_UY218.jpg">
+  <div class="des">
+    <span>addidas</span>
+    <h5>Cartoon Astronaut T-Shirts</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+  </div>
+  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+<div class="pro">
+  <img src="https://m.media-amazon.com/images/I/71DGhNHPyeL.AC_UY218.jpg" alt="">
+  <div class="des">
+    <span>addidas</span>
+    <h5>Cartoon Astronaut T-Shirts</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+  </div>
+  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+  </div>
+
+</section>
+
+<section id="banner-2" class="section-m1">
+  <h4>Repair Services</h4>
+  <h2>Up to <span>50% Off </span>- All Electronic Product</h2>
+  <button class="normal">Explore More</button>
+</section>
+
+ <section id="product1" class="section-p1">
+  <h1>New Arrival</h1>
+  <p>Summer Collection New Mordern Design</p>
+  <div class="pro-container">
+   <div class="pro">
+     <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n1.jpg?raw=true" alt="">
+     <div class="des">
+       <span>addidas</span>
+       <h5>Cartoon Astronaut T-Shirts</h5>
+       <div class="star">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+           </div>
+           <h4>$78</h4>
+     </div>
+     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+   </div>
+   <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n2.jpg?raw=true" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n3.jpg?raw=true" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n4.jpg?raw=true" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n5.jpg?raw=true" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n6.jpg?raw=true">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n7.jpg?raw=true">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n8.jpg?raw=true" alt="">
+    <div class="des">
+      <span>addidas</span>
+      <h5>Cartoon Astronaut T-Shirts</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  </div>
+
+</section>
+
+<section id="sm-banner" class="section-p1">
+  <div class="banner-box">
+    <h4>Crazy Deals</h4>
+    <h2>Buy 1 get 1 Free</h2>
+    <span>The best classic dress is on sale </span>
+    <button class="white">Learn More</button>
+  </div>
+  <div class="banner-box banner-box2">
+    <h4>Spring/Summer</h4>
+    <h2>Buy 1 get 1 Free</h2>
+    <span>The best classic dress is on sale </span>
+    <button class="white">Collection</button>
+  </div>
+</section>
+
+<section id="banner3">
+  <div class="banner-box">
+    <h2>SEASONAL SALE</h2>
+    <h3>Winter Collection -50% OFF</h3>
+  </div>
+  <div class="banner-box banner-box2">
+    <h2>SEASONAL SALE</h2>
+    <h3>Winter Collection -50% OFF</h3>
+  </div>
+  <div class="banner-box banner-box3">
+    <h2>SEASONAL SALE</h2>
+    <h3>Winter Collection -50% OFF</h3>
+  </div>
+</section>
+
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get-email updates about our latest shop and <span>special offers.</span></p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your email address">
+    <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo"  src="https://seeklogo.com/images/P/peter-england-logo-CAA89E9287-seeklogo.com.png" alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 526 Wellington Road, Madhav Nagar, Freeganj, Ujjain (M.P)</p>
+    <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+    <p><strong>Hours:</strong> 10:00 - 6:00 - sat</p>
+     <div class="follow">
+       <h4>Follow Us</h4>
+       <div class="icon">
+         <i class="fab fa-facebook-f"></i>
+         <i class="fab fa-twitter"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-pinterest-p"></i>
+         <i class="fab fa-youtube"></i>
+       </div>
+     </div>
+  </div>
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Term & Conditions</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign in</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+  </div>
+   <div class="col install">
+       <h4>Install App</h4>
+       <p>From App Store or Google Play</p>
+       <div class="row">
+         <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/app.jpg?raw=true"alt="">
+         <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/play.jpg?raw=true" alt="">
+        </div>
+        <p>From App Store or Google Play</p>
+        <img src="https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/pay/pay.png?raw=true" alt="">
+   </div>
+    <div class="copyright">
+     <p> @2024, Prithviraj - HTML CSS  E-commerce</p>
+   </div> 
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
